@@ -105,12 +105,12 @@ li a.active, li a:hover{
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    gap: 2rem;
     justify-content: center;
 }
 
 .image-container{
-    margin: 0 auto;
+    
 }
 
 
@@ -158,60 +158,57 @@ p{
     font-weight: bold;
 }
 .contenedor-servicios{
-    width: 100%;
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.contenedor-titulo{
-    width: 100%;
-    margin-top: 0rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+ 
 
 }
 .titulo-servicios{
     margin-top: 3rem;
-    display: flex;
-    flex-direction: row;
-    color: #eda5e1;
+    margin-bottom: 3rem;
     font-size: 2rem;
     font-weight: bold;
+    color: #eda5e1;
+}
+.contenedor-de-tarjetas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    overflow-x: scroll;
+    padding: .8rem;
+
+}
+.tarjetas-item{
+    background-color: #eda5e1;
+    background-image: url(/assets/Vectores/Ellipse\ 14.svg);
+    background-repeat: no-repeat;
+    background-size: 10rem;
+    background-position: center top;
+    width: 10rem;
+    border-radius: 5%;
+
+    
+
 }
 .contenedor-tarjetas{
-    width: 100%;
-    display: flex; 
-    gap: 24px;
-    overflow: auto;
+   
+    padding: 2rem 1rem 1rem 1rem;
     
 }
-.servicio-tarjetas{
-    width: 10rem;
-    height: 25rem;
-    margin-top: 2rem;
-    margin-bottom: 20px;
-    background-color: #e4d2e1;
-    border-radius: 4%;
+.icon-tarjeta{
+    height: 5rem;
+}
+.p-servicios{
     color: #060606;
-    font-size: .7rem;
-    font-weight: bold;
+    font-size: 0.7rem;
 }
-h3{
-    font-weight: bold;
-    font-size: large;
-}
-svg{
-    width: 10rem;
-    height: 5.5rem;
-    border-radius: 10%;
-}
+
 .contenedor-mishabilidades{
 margin-top: 2rem;
 padding: 1rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
 }
 .titulo-habilidades{
     margin-top: .5rem;
@@ -243,4 +240,133 @@ progress{
     font-size: 1.3rem;
     text-align: start;
 
+}
+
+.mi-portafolio{
+    
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.titulo-portafolio{
+    color: #eda5e1;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    width: 100%;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.miPortafolio {
+    margin-top: .5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    
+}
+.container-img-portafolio {
+   
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+    overflow-y: scroll;
+    width: 100%;
+
+
+
+}
+.imagen-p{
+    margin-top: 1rem;
+    width: 20rem;
+}
+.contenedor-contacto{
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.tarjetas-de-contacto{
+    display: flex;
+    flex-direction: column;
+}
+.titulo-contacto{
+    color: #eda5e1;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.contacto-item{
+    width: 10rem;
+    height: 10rem;
+    margin-top: 2rem;
+    margin-bottom: 20px;
+    background-color: #e4d2e1;
+    border-radius: 4%;
+    color: #060606;
+    display: flex;
+    justify-content: center;
+    background-image: url(/assets/Vectores/Ellipse\ 14.svg);
+    background-repeat: no-repeat;
+    background-size: 10rem;
+    background-position: center top;
+}
+.contenedor-contac{ 
+    margin-top: 1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.icon-contac{
+    width: 3rem;
+}
+.p-contac{
+    font-size:.6rem;
+}
+
+
+.fa-solid{
+    color: rgb(199, 32, 141);
+}
+.footer{
+    height: 40%;
+    padding: 2rem;
+
+}
+
+@media(min-width:400px) {
+    .home{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .image-container{
+        order: 1;
+
+    }
+    .contenedor-mishabilidades{
+        width: 80%;
+        margin: auto;
+        
+        
+    }
+    p{
+        width: 60%;
+        margin: auto;
+        padding-top: 2rem;
+    }
+    .tarjetas-de-contacto{
+        flex-direction: row;
+        gap: 3rem;
+    
+
+    }
 }
